@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: until
+# key: un
+# --
+until ${1:<condition>} {
+$0
+}.

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: whn
+# key: whn
+# --
+when ${1:<condition>} then ${2:<expression>}
+$0

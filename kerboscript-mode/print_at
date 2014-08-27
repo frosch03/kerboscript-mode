@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: print at
+# key: pat
+# --
+print "$0" at (${2:<col>},${3:<row>}).

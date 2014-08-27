@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: when
+# key: when
+# --
+when ${1:<condition>} then {
+$0
+}.

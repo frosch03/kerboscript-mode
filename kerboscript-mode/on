@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: on
+# key: on
+# --
+on ${1:<statement>} {
+$0
+}.
