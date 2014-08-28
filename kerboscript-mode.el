@@ -1,7 +1,8 @@
-;; filename: kerboscript-mode.el
-;; 
-;; date:     2014-08-23
-;; by:       frosch03
+;;; kerboscript-mode.el --- basic syntax highlighting for kOS's scripting language kerboscript
+;;; Version: 0.1.1
+;;; Author: Matthias Brettschneider <frosch03@frosch03.de>
+;; date: 2014-08-23
+;; by:   frosch03
 
 (defun kerboscript-indent-line ()
   "Indent current line as kerboscript code"
