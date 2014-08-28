@@ -80,17 +80,19 @@
              (message "Making completion list...%s" "done")))
     )
   )
-
 (define-derived-mode kerboscript-mode prog-mode "KerboScript script"
   "KerboScript mode is a major mode for editing kOS files"
   
-  (setq font-lock-defaults '(kerboscript-keywords))
+  (setq font-lock-defaults '(kerboscript-keywords t t))
   (setq mode-name "kerboscript-mode")
-  
+
   ;; when there's an override, use it
   ;; otherwise it gets the default value
   (setq tab-width 2)
   (set (make-local-variable 'indent-line-function) 'kerboscript-indent-line)    
+  (set (make-local-variable 'font-lock-keywords-case-fold-search) t)
+  ;; (setq font-lock-keywords-case-fold-search t)
+  ;; (put 'kerboscript-mode 'font-lock-keywords-case-fold-search t)
   (modify-syntax-entry ?\/ ". 12b" kerboscript-mode-syntax-table)
   (modify-syntax-entry ?\n "> b" kerboscript-mode-syntax-table)
   )
